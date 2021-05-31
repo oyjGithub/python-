@@ -5,6 +5,8 @@ my project about Reptile
 Store the crawled IP address in the TXT text. When the set proxy IP fails, it will automatically switch the available IP in the text to continue crawling data;
 
 *****IP change function*****
+
+```
 def proxies_switch(url):
     print("正在进行ip的切换...")
     global ip_num
@@ -27,3 +29,4 @@ def proxies_switch(url):
     proxies['https'] = ip_post
     print("第%d个ip地址测试成功"%(ip_num))
     time.sleep(0.5) #切换成功之后sleep一秒 防止新的ip_post被封
+```
